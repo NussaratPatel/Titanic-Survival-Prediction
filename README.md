@@ -8,6 +8,7 @@ This project builds a machine learning model to predict whether a passenger surv
 - Preprocess the dataset by handling missing values, encoding categorical variables, and normalizing numerical data.
 - Train a **Random Forest Classifier** and evaluate its performance.
 - Visualize important features influencing survival.
+- Save the trained model and evaluation results for future use.
 
 ## Dataset
 The dataset contains the following key features:
@@ -42,14 +43,18 @@ The dataset contains the following key features:
 
 ### Step 6: Model Evaluation
 - Evaluate the model using **accuracy, precision, recall, and F1-score**.
+- Save model performance results in `results/model_performance.txt`.
 
 ### Step 7: Data Visualization
 - Plot feature importance to understand the most influential factors in survival prediction.
 
+### Step 8: Save the Trained Model
+- The trained model is saved in `models/titanic_model.pkl` using `joblib`.
+
 ## Steps to Run the Project
 1. Clone the repository:
    ```sh
-   git clone <repository_link>
+   git clone https://github.com/NussaratPatel/Titanic-Survival-Prediction.git
    ```
 2. Navigate to the project directory:
    ```sh
@@ -64,6 +69,8 @@ The dataset contains the following key features:
    jupyter notebook titanic_model.ipynb
    ```
 5. Execute all steps in the notebook to train and evaluate the model.
+6. Check the saved model in `models/titanic_model.pkl`.
+7. Review model performance in `results/model_performance.txt`.
 
 ## Results
 - The model achieved strong predictive performance.
